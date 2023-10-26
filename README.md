@@ -8,5 +8,5 @@ A working camunda example application using kotlin and spring boot. Main use cas
 
 ## Publications
 
-* [Back to the Future — Camunda Task UI mediation done right](https://medium.com/@jangalinski/back-to-the-future-camunda-task-ui-mediation-done-right-cf5084a4296d)
-* [Using "a" history plugin with camunda SE](https://medium.com/@jangalinski/using-the-history-plugin-with-spring-boot-and-camunda-platform-7-community-edition-835c1b87138)
+* [2023/10 - Back to the Future — Camunda Task UI mediation done right](https://medium.com/@jangalinski/back-to-the-future-camunda-task-ui-mediation-done-right-cf5084a4296d)
+* [2022/11 - Using "a" history plugin with camunda SE](https://medium.com/@jangalinski/using-the-history-plugin-with-spring-boot-and-camunda-platform-7-community-edition-835c1b87138)
