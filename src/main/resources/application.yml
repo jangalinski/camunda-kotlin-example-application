@@ -17,3 +17,12 @@ camunda:
     filter:
       create: All tasks
 
+    # do not redirect to cockpit, we start with swagger
+    webapp:
+      index-redirect-enabled: false
+
+
+springdoc:
+  swagger-ui:
+    use-root-path: true
+    tryItOutEnabled: true
