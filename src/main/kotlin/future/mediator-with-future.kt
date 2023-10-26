@@ -42,14 +42,13 @@ class MediatorWithFutureProcess(
 
   private val futures = ConcurrentHashMap<BusinessKey, CompletableFuture<TaskId>>()
 
-  val onTaskCreation = TaskListener {
-    futures.remove(it.execution.businessKey)?.complete(it.id)
-  }
-
   fun startProcess(businessKey: BusinessKey): CompletableFuture<TaskId> {
     val future = futures.computeIfAbsent(businessKey) { CompletableFuture() }
     runtimeService.startProcessInstanceByMessage(MSG_START, businessKey)
-
     return future
+  }
+
+  val onTaskCreation = TaskListener {
+    futures.remove(it.execution.businessKey)?.complete(it.id)
   }
 }
