@@ -1,9 +1,19 @@
+# run the app on this magic port number to avoid conflicts with anything running under default 8080
 server:
   port: 20274
+
 camunda:
   bpm:
+    # create an admin user on the fly so we do not have to create a new one on every start
     admin-user:
       id: admin
+
+    # automatically login as admin, no need to fill the login form (see camunda-platform7-login)
     login:
       enabled: true
       user-id: admin
+
+    # create a filter for all user tasks in tasklist
+    filter:
+      create: All tasks
+
