@@ -1,0 +1,9 @@
+server:
+  port: 20274
+camunda:
+  bpm:
+    admin-user:
+      id: admin
+    login:
+      enabled: true
+      user-id: admin
