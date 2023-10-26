@@ -4,7 +4,7 @@ server:
 
 camunda:
   bpm:
-    # create an admin user on the fly so we do not have to create a new one on every start
+    # create an admin user on the fly, so we do not have to create a new one on every start
     admin-user:
       id: admin
 
